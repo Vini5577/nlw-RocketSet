@@ -15,10 +15,18 @@ img {
     height: auto;
 }
 
+/*==== VARIABLES ==================== */
+:root {
+}
+
 /*==== BASE ==================== */
 
-/*==== ? ==================== */
-:root {
+body {
+    font: 400 1rem "DM SANS", sans-serif;
+}
+
+h1 {
+    font: 700 1.875rem "Poppins", sans-serif;
 }
 
 /*==== LAYOUT ==================== */
