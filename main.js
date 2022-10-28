@@ -55,20 +55,20 @@ const swiper = new Swiper('.swiper', {
 
 /* ScrollReveal: Monstrar elementos quando der scroll na página*/
 const scrollReveal = ScrollReveal({
-    origin:'top',
+    origin: 'top',
     distance: '30px',
     duration: 700,
     reset: true
-}) 
+})
 
 scrollReveal.reveal(
-   `#home .image, #home .text,
+    `#home .image, #home .text,
     #about .image, #about .text,
-    #services header, #services .card,
-    #testimonials header, #testimonials .testimonials,
+    #services header, #testimonials .testimonials,
     #contact .text, #contact .links,
-    footer .brand, footer .social
-`, {interval: 100})
+    footer .brand, footer .social`,
+    { interval: 100 }
+)
 
 
 /* Botão voltar para o topo */
@@ -83,8 +83,17 @@ function backToTop(){
     }
 }
 
-/* When Scrull*/ 
+
+
+/* Menu ativo conforme a seção visivel na página */
+const sections = document.querySelector('main section[id]')
+function activateMenuAtCurrentSection(){
+
+}
+
+/* When Scrooll */
 window.addEventListener('scroll', function(){
     chageHeaderWhenScrull()
     backToTop()
+    activateMenuAtCurrentSection()
 })
